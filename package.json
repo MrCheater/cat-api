@@ -1,0 +1,16 @@
+{
+  "name": "cat-api",
+  "version": "1.0.0",
+  "description": "Cat API. Get random cat",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/index.js"
+  },
+  "author": "mrcheater",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.14.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  }
+}
