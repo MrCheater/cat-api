@@ -6,7 +6,7 @@ var api = require('../index.js');
 
 describe('Cat Api', function () {
     it('get("/") should be return {url : String}', function (done) {
-        var server = http.createServer(api).listen(9999);
+        var server = http.createServer(api()).listen(9999);
         axios.get('http://localhost:9999/').then(
             function(res) {
                 chai.assert('url' in res.data);
@@ -23,7 +23,7 @@ describe('Cat Api', function () {
     });
 
     it('get("/images/370.jpg") should be return 370.jpg', function (done) {
-        var server = http.createServer(api).listen(9999);
+        var server = http.createServer(api()).listen(9999);
         axios.get('http://localhost:9999/images/370.jpg').then(
             function(res) {
                 chai.assert(res.data.length > 10000);
