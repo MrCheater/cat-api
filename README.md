@@ -1,6 +1,11 @@
 # cat-api
 Cat API. Get random cat
 
+#Install
+```bash
+npm install cat-api
+```
+
 #Usage
 ```javascript
 const app = this.app = express();
